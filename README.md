@@ -1,20 +1,3 @@
-# 🌌 The Universe That Found You
-
-A cinematic, interactive love universe website built for a long-distance relationship.
-
----
-
-## 🚀 Quick Start — Open Instantly (No Build Required)
-
-Just open `index.html` directly in any browser.
-
-```
-love-universe/
-└── index.html   ← Double-click this file. That's it.
-```
-
----
-
 ## ⚙️ Angular Project Setup
 
 ### Prerequisites
@@ -152,41 +135,12 @@ Edit CSS variables in `src/styles.scss`:
 }
 ```
 
-### Add voice notes
+### voice notes
 In any scene component, add an `<audio>` element:
 ```html
 <audio #voiceNote src="assets/audio/my-voice.mp3" preload="auto"></audio>
 <button (click)="voiceNote.play()">▶ Play</button>
 ```
-
----
-
-## 🌐 Deployment (Vercel — Recommended)
-
-### Static file (index.html) — Instant deploy
-1. Go to [vercel.com](https://vercel.com)
-2. Drag and drop the `love-universe/` folder
-3. Done ✓
-
-### Angular project — Full deploy
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Build
-cd love-universe-angular
-ng build --configuration production
-
-# Deploy
-vercel dist/love-universe
-```
-
-Or connect your GitHub repo to Vercel for automatic deployments.
-
-**Build Settings for Vercel:**
-- Build Command: `ng build --configuration production`
-- Output Directory: `dist/love-universe`
-- Install Command: `npm install`
 
 ---
 
